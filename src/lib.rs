@@ -345,6 +345,7 @@ async fn main() {
 
 mod connection_string;
 mod convert;
+mod internal_logs;
 #[cfg(feature = "logs")]
 mod logs;
 #[cfg(feature = "metrics")]

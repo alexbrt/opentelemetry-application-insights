@@ -44,6 +44,7 @@ reqwest-blocking-client-rustls = ["reqwest-client-rustls"]
 reqwest-client = ["opentelemetry-http/reqwest", "reqwest/native-tls"]
 reqwest-client-vendored-tls = ["opentelemetry-http/reqwest", "reqwest/native-tls-vendored"]
 reqwest-client-rustls = ["opentelemetry-http/reqwest", "reqwest/rustls-tls"]
+tracing = ["dep:tracing"]
 
 [dependencies]
 async-trait = "0.1"
@@ -65,6 +66,7 @@ serde_repr = "0.1"
 sysinfo = { version = "0.36", optional = true }
 thiserror = "2"
 tracing = { version = ">=0.1.40", default-features = false, optional = true }
+uuid = { version = "1.18.1", features = ["v4"] }
 
 [dev-dependencies]
 doc-comment = "0.3.3"
